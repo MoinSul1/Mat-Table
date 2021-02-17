@@ -10,6 +10,10 @@ import { UsertableComponent } from './components/usertable/usertable.component';
 import { MatTableModule } from '@angular/material/table';
 import { UserService } from './services/user.service';
 import { HttpClientModule } from '@angular/common/http';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { NgxSpinnerModule } from "ngx-spinner";
 
 @NgModule({
   declarations: [
@@ -23,7 +27,13 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MatTableModule
+    MatTableModule,
+    MatSlideToggleModule,BrowserAnimationsModule,
+    FormsModule,
+    NgxSpinnerModule
+   
+    
+   
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
